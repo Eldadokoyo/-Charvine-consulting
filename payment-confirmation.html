@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Payment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            background-color: #34b233;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #2a8f2a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Confirm Your M-Pesa Payment</h2>
+        <p>Fill in your details below, and we’ll verify your payment before sending the eBook.</p>
+
+        <form action="confirm-payment.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mpesa_code">M-Pesa Transaction Code</label>
+                <input type="text" id="mpesa_code" name="mpesa_code" placeholder="Transaction Code (e.g. QWE123ABC4)" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Payment</button>
+        </form>
+
+        <p>💬 Need help? Contact us at <strong>+254 756 451 992</strong></p>
+    </div>
+
+</body>
+</html>

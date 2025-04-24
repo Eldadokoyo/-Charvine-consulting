@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Payment - Mastering Sales & Distribution in FMCG</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .payment-box {
+            text-align: left;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background: #f1f1f1;
+        }
+        .btn-custom {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn-mpesa {
+            background-color: #34b233;
+            color: white;
+        }
+        .btn-paypal {
+            background-color: #0070ba;
+            color: white;
+        }
+        .btn-mpesa:hover, .btn-paypal:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Complete Your Purchase</h2>
+        <p>Securely pay for <strong>Mastering Sales and Distribution in FMCG</strong> and receive your eBook.</p>
+
+        <!-- M-Pesa Payment Instructions -->
+        <div class="payment-box">
+            <h3>M-Pesa Payment (Kenya)</h3>
+            <p>Follow these steps to pay via M-Pesa:</p>
+            <ul>
+                <li>  Dial: *334#</li>
+                <li>  Select: "Lipa na M-Pesa" → Paybill</li>
+                <li>  Enter Paybill Number: <strong>714888</strong></li>
+                <li>  Enter Account Number: <strong>229364</strong></li>
+                <li>  Enter Amount: KES 600</li>
+                <li>  Confirm & Send</li>
+            </ul>
+
+            <p><strong>OR</strong> Use Till Number: <strong>229364</strong></p>
+            <p>After payment, click below to submit your details:</p>
+            <a href="payment-confirmation.html" class="btn-custom btn-mpesa">I Have Paid via M-Pesa</a>
+        </div>
+
+        <!-- PayPal Payment -->
+        <div class="payment-box">
+            <h3>PayPal Payment (International Buyers)</h3>
+            <p>Click the button below to pay via PayPal (USD 6.50).</p>
+
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="business" value="okeloomondi@gmail.com">
+                <input type="hidden" name="item_name" value="Mastering Sales and Distribution in FMCG eBook">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="amount" value="6">
+                <button type="submit" class="btn-custom btn-paypal">Pay with PayPal</button>
+            </form>
+        </div>
+
+        <p>💬 Need help? Contact us at <strong>+254 756 451 992</strong></p>
+    </div>
+
+</body>
+</html>
